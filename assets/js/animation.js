@@ -24,6 +24,22 @@
 
   })();
 
+
+  $(window).scroll(function() {
+    //为了保证兼容性，这里取两个值，哪个有值取哪一个
+    //scrollTop就是触发滚轮事件时滚轮的高度
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var moveY = $(".page-heading").outerHeight();
+    if(scrollTop > 120){
+      $(".movey").css({"position":"fixed","top":"0","padding-top":"10px","padding-bottom":"10px","z-index":"999"});
+    }else{
+      $(".movey").css("position","relative");
+    }
+  })
+
+
+
+
   this.WOW = (function() {
     WOW.prototype.defaults = {
       boxClass: 'wow',
