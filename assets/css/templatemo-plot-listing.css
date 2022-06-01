@@ -52,7 +52,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
 }
 
 /* ---- .grid-item ---- */
-
+.movey{background-color: #FFF;}
 .grid-sizer,
 .grid-item {
   width: 50%;
@@ -1348,8 +1348,7 @@ Page Heading
   position: relative;
   overflow: hidden;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .page-heading .top-text {
@@ -1393,7 +1392,7 @@ Category Post
 
 .category-post .icon {
   display: inline-block;
-    width: 50px;
+    width: 85px;
     height: 30px;
     border-radius: 8px;
     text-align: center;
@@ -1427,7 +1426,7 @@ Category Post
 .category-post .naccs .menu div {
   color: #fff;
   margin: 0px;
-  width: 20%;
+  width: 25%;
   font-size: 10px;
   display: inline-block;
   float: left;
@@ -1438,9 +1437,9 @@ Category Post
 }
 
 .category-post .naccs .menu div .thumb {
-  padding: 12px 0px;
-  margin-left: 25px;
-  margin-right: 25px;
+  padding: 5px 0px;
+  /* margin-left: 25px;
+  margin-right: 25px; */
 }
 
 
@@ -2066,6 +2065,6 @@ responsive
     right: 15px;
   }
   .category-post .icon {
-    transform: translateX(-16px);
+    transform: translateX(3px);
   }
 }
